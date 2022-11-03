@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: /norobots/
+Allow: /
+
+Sitemap: https://airpark69.github.io/sitemap.xml
