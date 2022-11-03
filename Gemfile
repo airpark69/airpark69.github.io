@@ -5,7 +5,7 @@ source "https://rubygems.org"
 gemspec
 
 group :test do
-  gem "html-proofer", "~> 3.18"
+  gem 'html-proofer', '~> 3.19', '= 3.19.1'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -20,5 +20,6 @@ gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 # Jekyll <= 4.2.0 compatibility with Ruby 3.0
 gem "webrick", "~> 1.7"
-gem "jekyll-sitemap"
+gem 'jekyll-sitemap'
+gem 'nokogiri', '~> 1.12', '= 1.12.5'
 
