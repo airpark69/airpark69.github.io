@@ -35,6 +35,7 @@ github blog의 루트 폴더로 가서
 거기에 pages-deploy.yml 파일이 있을 것이다.
 
 ```yml
+# pages-deploy.yml
 - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -48,11 +49,32 @@ github blog의 루트 폴더로 가서
 ruby-version을 3에서 2로 바꿔준다.
 
 ```yml
+# pages-deploy.yml
 - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2 # reads from a '.ruby-version' or '.tools-version' file if 'ruby-version' is omitted
           bundler-cache: true
+```
+
+그리고
+
+같은 폴더의 ci.yml을 열어준다
+
+```yml
+# ci.yml
+strategy:
+      matrix:
+        ruby: [2.5, 2.6, 2.7, 3]
+```
+
+여기서 3을 지워준다.
+
+```yml
+# ci.yml
+strategy:
+      matrix:
+        ruby: [2.5, 2.6, 2.7]
 ```
 
 이후
