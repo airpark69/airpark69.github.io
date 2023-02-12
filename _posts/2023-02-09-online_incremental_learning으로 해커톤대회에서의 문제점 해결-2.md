@@ -1,5 +1,5 @@
 ﻿---
-title : online-incremental-learning으로 해커톤대회에서의 문제점 해결-2
+title : online_incremental_learning으로 해커톤대회에서의 문제점 해결-2
 date : 2023-02-09 09:42:00 +09:00
 categories : [머신러닝, 파이썬]
 tags : [online learning, incremental learning, **continual learning**, lifelong learning] 
